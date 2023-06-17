@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,linux,macos,react
 
@@ -50,6 +51,8 @@ Temporary Items
 *.icloud
 
 ### Node ###
+=======
+>>>>>>> d1dc0ef4a225ef5a6a3e0e010d9ec409ff658849
 # Logs
 logs
 *.log
@@ -154,6 +157,10 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
+<<<<<<< HEAD
+=======
+.cache
+>>>>>>> d1dc0ef4a225ef5a6a3e0e010d9ec409ff658849
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -179,6 +186,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
 
 ### Node Patch ###
 # Serverless Webpack directories
@@ -229,3 +237,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos,react
+=======
+>>>>>>> d1dc0ef4a225ef5a6a3e0e010d9ec409ff658849
