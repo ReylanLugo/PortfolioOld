@@ -13,7 +13,7 @@ import { GrMail } from "react-icons/gr";
 import { IconButton } from "../IconButton/IconButton";
 
 const Intro: React.FC = () => {
-  return (s
+  return (
     <>
       <Container fluid className="p-0 intro d-flex flex-column">
         <Row className="m-0">
