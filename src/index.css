@@ -1,0 +1,12 @@
+body {
+  height: 100%;
+  display: block;
+}
+#root {
+  background-color: #F7FAFC;
+  height: 100vh;
+  display: block;
+}
+.intro {
+  height: 100%;
+}
