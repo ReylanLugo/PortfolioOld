@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
             <Navbar></Navbar>
           </Col>
         </Row>
-        <Row className="m-0 gy-4">
+        <Row className="m-0 gy-4 clouds vh-100">
           <Col className="lorem m-3">
             <p className="greeting">Welcome, I'm</p>
             <div>
@@ -76,17 +76,12 @@ const Intro: React.FC = () => {
           </Col>
           <Col xs={0}>
             <img
-              src="/vectori.png"
+              src="/vec1.png"
               alt="logo"
               className="img-fluid introvector"
             />
           </Col>
           
-        </Row>
-        <Row className="m-0 primarybox" >
-          <Col>
-          <p>as</p>
-          </Col>
         </Row>
       </Container>
     </>

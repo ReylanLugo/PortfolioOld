@@ -95,11 +95,12 @@
 }
 .btn.btn-download {
     border-radius: 20px;
-    background-color: #f97082;
+    background-color: #33386d;
     font-size: 18px;
     font-weight: 100;
     color: white;
     &:hover {
+      background-color: #242748;
       color: #cbd5e0;
     }
 }
@@ -108,4 +109,21 @@
   height: 900px;
 }
 
+.clouds {
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+              url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+              url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+	animation: wind 20s linear infinite;
+}
+@keyframes wind{
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
 
+}
