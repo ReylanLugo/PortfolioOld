@@ -19,9 +19,9 @@ const Navbar: React.FC = () => {
           <Navi.Toggle aria-controls="basic-navbar-nav" />
           <Navi.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#me">About me</Nav.Link>
               <Nav.Link 
-              href="#link">Link</Nav.Link>
+              href="#projects">Projects</Nav.Link>
             </Nav>
           </Navi.Collapse>
         </Container>

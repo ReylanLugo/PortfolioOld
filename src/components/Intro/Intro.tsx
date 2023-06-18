@@ -15,10 +15,10 @@ import { IconButton } from "../IconButton/IconButton";
 const Intro: React.FC = () => {
   return (
     <>
-      <Container fluid className="p-0 intro d-flex flex-column">
+      <Container fluid className="p-0 d-flex flex-column">
         <Row className="m-0">
           <Col className="p-0">
-            <Navbar></Navbar>
+            
           </Col>
         </Row>
         <Row className="m-0 gy-4 clouds vh-100">

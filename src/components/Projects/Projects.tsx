@@ -12,19 +12,17 @@ import "./styles.css";
 import { Cursor } from "react-simple-typewriter";
 import { FaGithubAlt } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
+import { ConsoleTitle } from "../ConsoleTitle/ConsoleTitle";
 
 const Projects: React.FC = () => {
   return (
     <>
-      <Container className="projects d-flex" >
+      <Container id="projects" className="projects d-flex" >
         <Row className="menu">
           <Col xs={12} md={{ offset: 0, span: 5 }}>
-            <h1 className="title">
-              <Cursor cursorColor="#0d6efd" cursorStyle=">" />
-              PROJECTS
-            </h1>
+            <ConsoleTitle text="PROJECTS" />
             <ListGroup defaultActiveKey="#link2">
-              <ListGroup.Item action href="#link1">
+              <ListGroup.Item action href="#me">
                 &gt; Blid CRM
                 <div className="skill-badge">
                   <Badge bg="primary">React</Badge>

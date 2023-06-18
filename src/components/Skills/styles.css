@@ -1,5 +1,26 @@
 .skills {
-    display: flex;
+    font-family: monospace;
     height: 100vh;
     background-color: #0a192f;
+    display: flex;
+    color: #7fffd4b5;
+    flex-direction: column;
+    padding-top: 90px;
+    .title {
+        font-family: 'Source Code Pro VF', 'Source Code Pro';
+        border-bottom: 4px solid #f97082;
+        padding-bottom: 8px;
+        margin-bottom: 28px;
+        letter-spacing: 8px;
+        color: aliceblue;
+        width: max-content;
+        > span {
+          font-weight: 900;
+          font-size: 40px;
+          line-height: 0px;
+        }
+      }
+    p {
+        color: #7fffd4b5;
+    }
 }

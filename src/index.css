@@ -1,11 +1,15 @@
-body {
-  height: 100%;
-  display: block;
-}
 #root {
   background-color: #F7FAFC;
-  display: block;
 }
-.intro {
-  height: 100%;
+.slider {
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  .slide {
+    scroll-snap-align: start;
+    margin: 10px 0; /* Agrega un margen para el espaciado */
+  }
 }
