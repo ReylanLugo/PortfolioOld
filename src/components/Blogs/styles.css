@@ -1,0 +1,166 @@
+.blogs {
+  display: flex;
+  height: 100vh;
+  overflow: clip;
+  background-color: #0b1029;
+  align-items: center;
+  .title {
+    color: aliceblue;
+    border-bottom: 4px solid #83fda3;
+  }
+  & .box-title {
+    position: relative;
+    z-index: 1;
+    color: #9ea4ae;
+    background-color: #070b1c;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & h2 {
+      color: #d6ddf5;
+      word-spacing: unset;
+      display: table-caption;
+      font-size: 48px;
+    }
+  }
+  & .card {
+    width: 50%;
+    background-color: #070b1c;
+    border: 0;
+    color: #d6ddf5;
+    & img {
+      height: 200px;
+    }
+    .card-text {
+      padding: 2px 5px;
+      /* BOTH of the following are required for text-overflow */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn {
+          background-color: #070b1c;
+          color: #d6ddf5;
+        }
+        .text-muted {
+            color: #9ea4ae !important;
+        }
+    }
+  }
+  & .flicking-arrow-prev.is-circle, .flicking-arrow-next.is-circle {
+    background-color: #5e72f2;
+  }
+}
+
+
+.cube {
+    position: relative;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #003298;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    left: 0vw;
+    top: 20vh;
+    z-index: 0;
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 45vw;
+    top: 4vh;
+  }
+  .cube:nth-child(3n) {
+    border-color: #0051f4;
+  }
+ .cube:nth-child(3) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    left: 82vw;
+    top: 50vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    left: 87vw;
+    top: 10vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 72vh;
+  }
+  .cube:nth-child(7) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  .cube:nth-child(8) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 30vw;
+    top: 10vh;
+  }  
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .blogs {
+      & .box-title {
+        height: 275px;
+        margin-bottom: 30px;
+        & h2 {
+          font-size: 60px;
+        }
+      }
+    }
+    .flicking-camera {
+      .card {
+        width: 100% !important;
+        min-height: 396px;
+      }
+    }
+    
+  }
