@@ -1,0 +1,52 @@
+.contact {
+    font-family: 'Roboto';
+    height: 300px;
+    background-color: #070b1c;
+    color: #9ea4ae;
+    & input, & textarea, & select {
+        color: #9ea4ae;
+        border: 0;
+        background-color: #04060e; 
+    }
+    .form-control:focus {
+        background-color: #04060e;
+    }
+    & .form-floating>label {
+        color: #d3daf1!important;
+        &::after {
+            background-color: transparent!important;
+        }
+    }
+    & .btn {
+        background-color: #04060e;
+        border-color: #070b1c;
+        float: right;
+    }
+    & .subsform {
+        > p{
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        & h3 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 1.3rem;
+        }
+        & .info {
+            display: none;
+        }
+        & .subsform {
+            margin-top: 100px !important;
+            
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
